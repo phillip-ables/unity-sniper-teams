@@ -25,6 +25,14 @@ public class Player_Shooter : MonoBehaviour {
             if (Physics.Raycast(ray, out hit))
             {
                 GameObject hitObject = hit.transform.gameObject;
+
+                Enemy_Shot target = hitObject.GetComponent<Enemy_Shot>();
+
+                if(target != null)
+                {
+                    target.GotShot();
+                }
+
                 //launch a coroutine in response to a hit
                 StartCoroutine(ShotGen(hit.point));
             }
