@@ -11,6 +11,9 @@ public class Camera_Control : MonoBehaviour {
 
     public RotationAxis axes = RotationAxis.MouseX;
 
+    public float minVert = -45.0f;
+    public float maxVert = 45.0f;
+
     public float sensHorizontal = 10.0f;
     public float sensVertical = 10.0f;
 
@@ -25,10 +28,13 @@ public class Camera_Control : MonoBehaviour {
         else if (axes == RotationAxis.MouseY)
         {
             _rotationX -= Input.GetAxis("Mouse Y") * sensVertical;
+            _rotationX = Mathf.Clamp(_rotationX, minVert, maxVert);
+
+            float rotationY = transform.localEulerAngles.y;
+
+            transform.localEulerAngles = new Vector3(_rotationX, rotationY, 0);
+
         }
 
-        float rotationY = transform.localEulerAngles.y;
-
-        transform.localEulerAngles = new Vector3(_rotationX, rotationY, 0);
     }
 }
