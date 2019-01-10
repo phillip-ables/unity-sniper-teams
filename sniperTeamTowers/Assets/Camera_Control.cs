@@ -3,14 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Camera_Control : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public enum RotationAxis
+    {
+        MouseX = 1,
+        MouseY = 2
+    }
 }
