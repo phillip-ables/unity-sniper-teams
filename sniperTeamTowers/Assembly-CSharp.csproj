@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera_Control.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
+    <Compile Include="Assets\Scripts\Player_Shooter.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/phill/Desktop/code/unity-sniper-teams/sniperTeamTowers/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
