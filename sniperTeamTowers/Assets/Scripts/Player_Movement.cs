@@ -3,14 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player_Movement : MonoBehaviour {
+    public float speed = 6.0f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private CharacterController _charCont;
+
 }
