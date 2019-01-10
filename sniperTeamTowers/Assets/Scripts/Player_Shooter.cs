@@ -32,9 +32,11 @@ public class Player_Shooter : MonoBehaviour {
                 {
                     target.GotShot();
                 }
-
-                //launch a coroutine in response to a hit
-                StartCoroutine(ShotGen(hit.point));
+                else
+                {
+                    //launch a coroutine in response to a hit
+                    StartCoroutine(ShotGen(hit.point));
+                }
             }
         }
     }
