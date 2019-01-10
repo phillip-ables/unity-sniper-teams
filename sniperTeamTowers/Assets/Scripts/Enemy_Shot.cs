@@ -5,11 +5,15 @@ using UnityEngine;
 public class Enemy_Shot : MonoBehaviour {
     public void GotShot()
     {
-
+        StartCoroutine(Die());
     }
 
     private IEnumerator Die()
     {
+        this.transform.Rotate(-75, 0, 0);
 
+        yield return new WaitForSeconds(1.5f);
+
+        Destroy(this.gameObject);
     }
 }
