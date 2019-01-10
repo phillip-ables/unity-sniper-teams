@@ -18,7 +18,7 @@ public class Player_Shooter : MonoBehaviour {
         // left mouse button
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 point = new Vector3(playerCam.pixelWidth / playerCam.pixelHeight / 2, 0);
+            Vector3 point = new Vector3(playerCam.pixelWidth / 2, playerCam.pixelHeight / 2, 0);
 
             Ray ray = playerCam.ScreenPointToRay(point);
             RaycastHit hit;
@@ -26,7 +26,19 @@ public class Player_Shooter : MonoBehaviour {
             {
                 GameObject hitObject = hit.transform.gameObject;
                 //launch a coroutine in response to a hit
+                StartCoroutine(ShotGen(hit.point));
             }
         }
+    }
+
+    private IEnumerator ShotGen(Vector3 pos)
+    {
+        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        sphere.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+        sphere.transform.position = pos;
+
+        yield return new WaitForSeconds(1);
+
+        Destroy(sphere);
     }
 }
