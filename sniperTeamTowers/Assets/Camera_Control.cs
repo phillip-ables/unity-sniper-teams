@@ -16,5 +16,19 @@ public class Camera_Control : MonoBehaviour {
 
     public float _rotationX = 0;
 
+    private void Update()
+    {
+        if(axes == RotationAxis.MouseX)
+        {
+            transform.Rotate(0, Input.GetAxis("Mouse X") * sensHorizontal, 0);
+        }
+        else if (axes == RotationAxis.MouseY)
+        {
+            _rotationX -= Input.GetAxis("Mouse Y") * sensVertical;
+        }
 
+        float rotationY = transform.localEulerAngles.y;
+
+        transform.localEulerAngles = new Vector3(_rotationX, rotationY, 0);
+    }
 }
