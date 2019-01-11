@@ -7,6 +7,7 @@ public class Enemy_Movement : MonoBehaviour {
     public float obstacleRange = 5.0f;
 
     private bool _alive;
+    private GameObject paintball;
 
     private void Start()
     {
@@ -24,11 +25,14 @@ public class Enemy_Movement : MonoBehaviour {
         RaycastHit hit;
         if(Physics.SphereCast(ray, 0.75f, out hit))
         {
+            /*            
             if(hit.distance < obstacleRange)
             {
                 float angle = Random.Range(-110, 110);
                 transform.Rotate(0, angle, 0);
             }
+            */
+            
         }
     }
 
