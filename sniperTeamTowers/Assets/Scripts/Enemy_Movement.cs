@@ -5,9 +5,10 @@ using UnityEngine;
 public class Enemy_Movement : MonoBehaviour {
     public float speed = 3.0f;
     public float obstacleRange = 5.0f;
+    public GameObject paintballPrefab;
 
     private bool _alive;
-    private GameObject paintball;
+    private GameObject _paintball;
 
     private void Start()
     {
@@ -32,7 +33,16 @@ public class Enemy_Movement : MonoBehaviour {
                 transform.Rotate(0, angle, 0);
             }
             */
-            
+            GameObject hitObject = hit.transform.gameObject;
+            if (hitObject.GetComponent<Player_Info>())
+            {
+                if(_paintball == null)
+                {
+                    _paintball = Instantiate(paintballPrefab) as GameObject;
+                    _paintball.transform.position = transform.TransformPoint(Vector3.forward * 1.5f);
+                    _paintball.transform.rotation = transform.rotation;
+                }
+            }
         }
     }
 
