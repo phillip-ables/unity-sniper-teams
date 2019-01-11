@@ -5,6 +5,11 @@ using UnityEngine;
 public class Enemy_Shot : MonoBehaviour {
     public void GotShot()
     {
+        // if this thing isnt null then go ahead and kill it
+        Enemy_Movement behavior = GetComponent<Enemy_Movement>();
+        if (behavior != null)
+            behavior.SetAlive(false);
+
         StartCoroutine(Die());
     }
 

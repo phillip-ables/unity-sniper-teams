@@ -31,4 +31,9 @@ public class Enemy_Movement : MonoBehaviour {
             }
         }
     }
+
+    public void SetAlive(bool alive)
+    {
+        _alive = alive;
+    }
 }
