@@ -11,4 +11,14 @@ public class Paintball : MonoBehaviour {
         transform.Translate(0, 0, speed * Time.deltaTime);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Player_Info player = other.GetComponent<Player_Info>();
+
+        if(player != null)
+        {
+            player.Hurt(damage);
+        }
+        Destroy(this.gameObject);
+    }
 }
