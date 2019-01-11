@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Info : MonoBehaviour {
+public class Player_Info : MonoBehaviour
+{
+    private int _health;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void Start()
+    {
+        _health = 10;
+    }
 }
