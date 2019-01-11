@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Camera_Control.cs" />
     <Compile Include="Assets\Scripts\Enemy_Movement.cs" />
     <Compile Include="Assets\Scripts\Enemy_Shot.cs" />
+    <Compile Include="Assets\Scripts\Enemy_Spawn.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
     <Compile Include="Assets\Scripts\Player_Shooter.cs" />
     <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
