@@ -26,13 +26,6 @@ public class Enemy_Movement : MonoBehaviour {
         RaycastHit hit;
         if(Physics.SphereCast(ray, 0.75f, out hit))
         {
-            /*            
-            if(hit.distance < obstacleRange)
-            {
-                float angle = Random.Range(-110, 110);
-                transform.Rotate(0, angle, 0);
-            }
-            */
             GameObject hitObject = hit.transform.gameObject;
             if (hitObject.GetComponent<Player_Info>())
             {
@@ -42,6 +35,11 @@ public class Enemy_Movement : MonoBehaviour {
                     _paintball.transform.position = transform.TransformPoint(Vector3.forward * 1.5f);
                     _paintball.transform.rotation = transform.rotation;
                 }
+            }
+            else if (hit.distance < obstacleRange)
+            {
+                float angle = Random.Range(-110, 110);
+                transform.Rotate(0, angle, 0);
             }
         }
     }
