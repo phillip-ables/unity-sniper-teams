@@ -73,6 +73,10 @@
     <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Player\SmoothMouseLook.cs" />
     <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Skybox\SkyboxChanger.cs" />
     <Compile Include="Assets\SimpleCumulus\Demo\Scripts\Skybox\SkyboxRotator.cs" />
+    <None Include="Assets\modern-weapons\README.txt" />
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>C:/Users/phill/Desktop/code/unity-sniper-teams/sniperTeamTowers/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/phill/Desktop/code/unity-sniper-teams/sniperTeamTowers/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

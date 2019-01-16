@@ -71,7 +71,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 76
+  controlID: 129
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 75
+  controlID: 27
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 74
+  controlID: 26
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -473,7 +473,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 12fbffff00000000
+    m_ExpandedIDs: 18fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -534,20 +534,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Plugins/FPS Constructor V1/Demo Assets/Weapons/Orbital Laser
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Plugins/FPS Constructor V1/Demo Assets/Weapons/Orbital Laser
+  - Assets
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\phill\Desktop\code\unity-sniper-teams\sniperTeamTowers
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 795}
-    m_SelectedIDs: 78340000
-    m_LastClickedID: 13432
-    m_ExpandedIDs: 000000008a2b0000382c0000a02c0000da2c0000e02d0000282e00003a2e0000e62e00001a3000004a300000883000008a3000008e300000ba3000002231000036310000ca310000ee310000b2320000283300007833000082330000d8330000e633000034340000783400002235000040350000a4350000da3500002037000056370000b437000052380000cc390000ce390000d039000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 382a0000
+    m_LastClickedID: 10808
+    m_ExpandedIDs: 00000000382a0000e02a0000462b00007e2b00005e2c0000a62c0000b82c0000642d0000942e0000c42e0000022f0000062f0000322f00009a2f0000ac2f000040300000643000002631000098310000e8310000f23100004832000056320000a4320000e8320000ae330000103400004634000086350000bc3500001a360000483800004a3800004c3800004e3800005038000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008a2b0000dc2d0000282e00004a300000883000008a3000008e3000001032000082330000d8330000343400002235000040350000a4350000da35000052380000cc390000ce390000d0390000
+    m_ExpandedIDs: 00000000382a0000e02a0000462b00007e2b00005e2c0000a62c0000b82c0000642d0000942e0000c42e0000022f0000062f0000322f00009a2f0000ac2f000040300000643000002631000098310000e8310000f23100004832000056320000a4320000e832000090330000ae330000103400004634000086350000bc3500001a360000483800004a3800004c3800004e38000050380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000763e0000283e0000723a0000c6340000803b000098300000963000009430000092300000b0300000562f0000b82c0000b22c00000e980000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
