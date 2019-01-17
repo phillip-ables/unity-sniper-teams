@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour {
 
+    public Transform shootPoint;
+    public float weaponRange = 100;
     public int bulletsPerMag = 30;
     public int bulletsLeft;
 
@@ -26,6 +28,14 @@ public class Weapon : MonoBehaviour {
     {
         if (fireTimer < fireRate)
             return;
-        Debug.Log("Fire-d!");
+
+        RaycastHit hit;
+
+        if(Physics.Raycast(shootPoint.position, shootPoint.transform.forward, out hit, weaponRange))
+        {
+            Debug.Log(hit.transform.name + "found!");
+        }
+
+        fireTimer = 0.0f;
     }
 }
