@@ -24,6 +24,8 @@ public class Weapon : MonoBehaviour {
 
     private void Fire()
     {
-
+        if (fireTimer < fireRate)
+            return;
+        Debug.Log("Fire-d!");
     }
 }
