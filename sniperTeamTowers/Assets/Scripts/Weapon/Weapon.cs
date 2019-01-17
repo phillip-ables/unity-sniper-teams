@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour {
 
     public float fireRate = 0.1f;  // 100 millisec
 
+    float fireTimer;
 
     private void Update()
     {
@@ -16,6 +17,9 @@ public class Weapon : MonoBehaviour {
         {
             Fire();
         }
+
+        if (fireTimer < fireRate)
+            fireTimer += Time.deltaTime;
     }
 
     private void Fire()
